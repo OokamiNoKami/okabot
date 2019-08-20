@@ -59,6 +59,26 @@ bot.on("message", async function(message) {
                 }
             });
     }
+
+    switch(args[0].toLowerCase()) {
+        case "ookami":
+            message.channel.send("", {
+                embed: {
+                    color: 0x26c6,
+                    author: message.author.username,
+                    title: 'Ookami',
+                    fields: [{
+                        name: "Qui est Ookami ?",
+                        value: "C'est le Dieu des Loups !",
+                        inline: false
+                    }],
+                    footer:{
+                        footer: "Le Créateur",
+                    },
+                }
+            });
+    }
+
 });
 
 bot.login(process.env.TOKEN);
