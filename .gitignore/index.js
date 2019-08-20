@@ -66,10 +66,12 @@ bot.on("message", async function(message) {
                 embed: {
                     color: 0x26c6,
                     author: message.author.username,
-                    title: 'Ookami',
+                    title: '',
                     fields: [{
                         name: "Qui est Ookami ?",
                         value: "C'est le Dieu des Loups !",
+                        value: "Non ... plus précisément c'est un Ado qui adore les animes Japonais, les Jeux-Vidéo et l'Informatique.",
+                        value: "Il est aussi à fonds sur les Loups et la Lune, et a plus tendance à aimer les couleurs sombrent comme le Rouge et le Noir.",
                         inline: false
                     }],
                     footer:{
