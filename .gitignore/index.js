@@ -40,6 +40,25 @@ bot.on("message", async function(message) {
             });
             break;
     }
+
+    switch(args[0].toLowerCase()) {
+        case "botinvite":
+            message.channel.send("", {
+                embed: {
+                    color: 0xFF0000,
+                    author: message.author.username,
+                    title: '',
+                    fields: [{
+                        name: "Lien pour inviter le Bot sur votre Serveur",
+                        value: "https://discordapp.com/api/oauth2/authorize?client_id=613369869504872449&scope=bot&permissions=267910339",
+                        inline: false
+                    }],
+                    footer:{
+                        footer: "Faites en bon usage ^^",
+                    },
+                }
+            });
+    }
 });
 
 bot.login(process.env.TOKEN);
